@@ -28,10 +28,17 @@ void PrintArray(int[] array)
 
 int SumOfOddNumbers(int[] array)
 {
+    // int sum = 0;
+    // for (int i = 0; i < array.Length; i++)
+    // {
+    //     if (i % 2 == 1) sum += array[i];
+    // }
+    // return sum;
+
     int sum = 0;
-    for (int i = 0; i < array.Length; i++)
+    for (int i = 1; i < array.Length; i += 2)
     {
-        if (i % 2 == 1) sum += array[i];
+        sum += array[i];
     }
     return sum;
 }
